@@ -1,0 +1,239 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    font-family:'Times New Roman', Times, serif;
+}
+#head
+{
+    height:130px;
+    width:100%;
+    background-color:#f7f6f1;
+    margin-top:1px;
+    margin-bottom:1px;
+}
+#head #headContent
+{
+    height:130px;
+    width:76%;
+    background-color:black;
+    border-radius:70px;
+}
+#head #headContent h1
+{
+    color:orange;
+    position:absolute;
+    left:18%;
+    top:1%;
+    font-size:90px;
+    text-shadow:0 -2px 0 oldlace;
+}
+#head #headImg
+{
+    background:#f7f6f1;
+    position:absolute;
+    top:1px;
+    left:76%;
+    height:130px;
+    width:23%;
+}
+#head #headImg img
+{
+    height:130px;
+    width:100%;
+}
+#container
+{
+    height:80vh;
+    width:100%;
+}
+#horizontalNavBar ul
+{
+    padding:0px;
+    margin:0px;
+    float:left;
+    list-style: none;
+}
+#horizontalNavBar ul li
+{
+    margin-right:3px;
+    margin-bottom:1px;
+    margin-top:1px;
+    width:270px;
+    height:50px;
+    float:left;
+    display:inline;
+    text-decoration:none;
+    text-align: center;
+    background:black;
+    opacity:.8;
+}
+#horizontalNavBar ul li a
+{
+    text-shadow:0 -2px 0 oldlace;
+    line-height:30px;
+    padding:10px;
+    display:block;
+    color:orange;
+    font-size:23px;
+    text-decoration:none;
+}
+#horizontalNavBar ul li ul li
+{
+    display:none;
+}
+#horizontalNavBar ul li:hover ul li
+{
+    display:block;
+}
+#horizontalNavBar ul li:hover
+{
+    background-color:green;
+}
+section
+{
+    height:82.4vh;
+    background:url('pic21..png') no-repeat;
+    background-size:cover;
+    transition:all .5s linear;
+}
+#verticalNavBar 
+{
+    height:505px;
+    position:fixed;
+    left:-270px;
+    top:17.4%;
+    width:270px;
+    background:black;
+    transition:all .5s linear;
+}
+#verticalNavBar #title
+{
+    color:orange;
+    font-size:35px;
+    background:black;
+    padding:25.4px;
+    font-family:Roboto;
+    text-shadow:0 -1px 0 orange;
+}
+#verticalNavBar ul
+{
+    list-style:none;
+}
+#verticalNavBar ul li 
+{
+    text-align: center;
+    background:black;
+    border-bottom:1px solid #333;
+    transition:all .5s linear;
+}
+#verticalNavBar ul li a i
+{
+    padding:25.5px;
+    color:orange;
+    text-shadow:0 1px 0 oldlace;
+    font-size:25px;
+    text-decoration: none;
+}
+#verticalNavBar ul li:hover
+{
+    padding-left:70px;
+}
+#check
+{
+    display:none;
+}
+label #btn,label #cancel
+{
+    position:absolute;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+label #btn
+{
+    margin:0px;
+    padding:7px;
+    top:30%;
+    left:25px;
+    font-size:35px;
+    background-color:black;
+}
+label #cancel
+{
+    padding:7px;
+    top:21%;
+    left:-250px;
+    font-size:27px;
+    background-color:#333;
+    z-index:1111;
+    transition:all .5s linear;
+}
+#check:checked ~ #verticalNavBar
+{
+    left:0px;
+}
+#check:checked ~ label #cancel
+{
+    left:225px;
+}
+#check:checked ~ section
+{
+    margin-left:270px;
+}
+#menuContainer
+{
+    border-radius:24px;
+    border:4px solid orange;
+    position:absolute;
+    top:38%;
+    left:50%;
+    height:400px;
+    width:400px;
+    background-color:black;
+    overflow:hidden;
+    opacity:.8;
+}
+#imgBox
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+#imgBox img
+{
+    position: absolute;
+    height:100%;
+    width:100%;
+    transform-origin:top;
+    transition:all 0.5s linear;
+    transform-style:preserve-3d;
+}
+#imgBox:hover img
+{
+    transform:rotateX(-90deg);
+    opacity:0;
+}
+#name
+{
+    font-size:50px;
+    padding:10px;
+    color:orange;
+    margin-bottom:20px;
+    margin-left:40px;
+    font-weight: 600;
+}
+#contentBox li p
+{
+    margin-left:30px;
+    padding:10px;
+    font-size:30px;
+    color:orange;
+}
+#contentBox span
+{
+    color:orange;
+    margin:15px;
+    padding:5px;
+    font-size:34px;
+}
